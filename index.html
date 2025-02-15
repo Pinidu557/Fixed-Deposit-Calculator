@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Deposit Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="mc">
+      <!--Left side form-->
+      <div class="calculator">
+        <form action="" method="post">
+        <h2>Fixed Deposit Calculator</h2>
+        <p>I Would like to deposit</p>
+        <div class="input-box">
+          <span class="currency">LKR</span>
+          <input type="number" placeholder="Enter Amount" id="da">
+        </div>
+
+        <p>Interest Rate</p>
+        <div class="input-box">
+          <span id="presentage">&#37</span>
+          <input type="number" placeholder="Enter Interest Rate" id="ir">
+        </div>
+
+        <p>For a period of</p>
+        <select name="" id="period">
+          <option value="">Select a Period</option>
+          <option value="1">1 Months</option>
+          <option value="2">2 Months</option>
+          <option value="3">3 Months</option>
+          <option value="4">4 Months</option>
+          <option value="6">6 Months</option>
+          <option value="12">12 Months</option>
+          <option value="24">24 Months</option>
+          <option value="36">36 Months</option>
+          <option value="48">48 Months</option>
+          <option value="60">60 Months</option>
+        </select>
+
+
+        <p>I Would like to my Interest Paid</p>
+        <div class="interestOptions">
+          
+            <input type="radio" name="interest" id="monthly" value="monthly">
+            <label for="monthly">Monthly</label>
+
+            <input type="radio" name="interest" id="atmaturity" value="atmaturit">
+            <label for="atmaturity">At Maturity</label> 
+          
+
+        </div>
+
+        <button type="submit" class="calculate-btn" id="cb">Calculate</button>
+        <button type="reset" class="reset-btn">Reset</button>
+
+        </form>
+
+      </div>
+
+      <!--Right side display-->
+      <div class="result" id="resultdiv">
+        <h3>Your Result</h3>
+        <p class="pw">Interest Paid</p>
+        <h1 class="amount">Rs. <span id="amount">0.00</span></h1>
+
+        <hr>
+        <div class="details">
+          <span>Initial Deposit (LKR)</span>
+          <span>LKR <span id="dda" style="color: #0047ab; font-weight: bold;">0.00</span> </span>
+        </div>
+
+        <div class="details">
+          <span id="ti">Total Amount (LKR)</span>
+          <span>LKR <span id="di" style="color: #0047ab ; font-weight: bold;">0.00</span></span>
+        </div>
+
+
+        <small>*Government taxes will be apply*</small>
+
+
+      </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+  
+</body>
+</html>
